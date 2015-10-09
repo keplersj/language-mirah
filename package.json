@@ -1,13 +1,13 @@
 {
-  "name": "language-ruby",
-  "version": "0.60.0",
-  "description": "Ruby language support in Atom",
+  "name": "language-mirah",
+  "version": "0.0.0",
+  "description": "Mirah language support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"
   },
   "license": "MIT",
-  "repository": "https://github.com/atom/language-ruby",
+  "repository": "https://github.com/k2b6s9j/language-mirah",
   "devDependencies": {
     "coffeelint": "^1.10.1"
   }
