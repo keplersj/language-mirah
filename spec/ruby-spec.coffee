@@ -1,16 +1,16 @@
-describe "Ruby grammar", ->
+describe "Mirah grammar", ->
   grammar = null
 
   beforeEach ->
     waitsForPromise ->
-      atom.packages.activatePackage("language-ruby")
+      atom.packages.activatePackage("language-mirah")
 
     runs ->
-      grammar = atom.grammars.grammarForScopeName("source.ruby")
+      grammar = atom.grammars.grammarForScopeName("source.mirah")
 
   it "parses the grammar", ->
     expect(grammar).toBeTruthy()
-    expect(grammar.scopeName).toBe "source.ruby"
+    expect(grammar.scopeName).toBe "source.mirah"
 
   it "tokenizes self", ->
     {tokens} = grammar.tokenizeLine('self')
