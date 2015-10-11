@@ -44,6 +44,27 @@
     'name': 'meta.module.mirah'
   }
   {
+    'captures':
+      '1':
+        'name': 'keyword.control.interface.mirah'
+      '2':
+        'name': 'entity.name.type.interface.mirah'
+      '3':
+        'name': 'entity.other.inherited-class.interface.first.mirah'
+      '4':
+        'name': 'punctuation.separator.inheritance.mirah'
+      '5':
+        'name': 'entity.other.inherited-class.interface.second.mirah'
+      '6':
+        'name': 'punctuation.separator.inheritance.mirah'
+      '7':
+        'name': 'entity.other.inherited-class.interface.third.mirah'
+      '8':
+        'name': 'punctuation.separator.inheritance.mirah'
+    'match': '^\\s*(interface)\\s+(([A-Z]\\w*(::))?([A-Z]\\w*(::))?([A-Z]\\w*(::))*[A-Z]\\w*)'
+    'name': 'meta.interface.mirah'
+  }
+  {
     'comment': 'else if is a common mistake carried over from other languages. it works if you put in a second end, but it’s never what you want.'
     'match': '(?<!\\.)\\belse(\\s)+if\\b'
     'name': 'invalid.deprecated.mirah'
@@ -107,7 +128,7 @@
   }
   {
     'comment': ' everything being a method but having a special function is a..'
-    'match': '\\b(initialize|new|loop|include|extend|prepend|raise|fail|attr_reader|attr_writer|attr_accessor|attr|catch|throw|private|module_function|public|protected)\\b(?![?!])'
+    'match': '\\b(initialize|new|loop|include|extend|implements|prepend|raise|fail|attr_reader|attr_writer|attr_accessor|attr|catch|throw|private|module_function|public|protected)\\b(?![?!])'
     'name': 'keyword.other.special-method.mirah'
   }
   {
