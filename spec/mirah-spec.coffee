@@ -17,16 +17,8 @@ describe "Mirah grammar", ->
     expect(tokens[0]).toEqual value: 'self', scopes: ['source.mirah', 'variable.language.self.mirah']
 
   it "tokenizes special functions", ->
-    {tokens} = grammar.tokenizeLine('require "."')
-    expect(tokens[0]).toEqual value: 'require', scopes: ['source.mirah', 'meta.require.mirah', 'keyword.other.special-method.mirah']
-
-    {tokens} = grammar.tokenizeLine('Kernel.require "."')
-    expect(tokens[1]).toEqual value: '.', scopes: ['source.mirah', 'punctuation.separator.method.mirah']
-    expect(tokens[2]).toEqual value: 'require ', scopes: ['source.mirah']
-
-    {tokens} = grammar.tokenizeLine('Kernel::require "."')
-    expect(tokens[1]).toEqual value: '::', scopes: ['source.mirah', 'punctuation.separator.method.mirah']
-    expect(tokens[2]).toEqual value: 'require ', scopes: ['source.mirah']
+    {tokens} = grammar.tokenizeLine('import "."')
+    expect(tokens[0]).toEqual value: 'import', scopes: ['source.mirah', 'meta.import.mirah', 'keyword.other.special-method.mirah']
 
   it "tokenizes symbols", ->
     {tokens} = grammar.tokenizeLine(':test')
