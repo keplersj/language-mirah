@@ -356,26 +356,26 @@
       }
     ]
   }
-  {
-    'begin': '`'
-    'beginCaptures':
-      '0':
-        'name': 'punctuation.definition.string.begin.mirah'
-    'comment': 'execute string (allows for interpolation)'
-    'end': '`'
-    'endCaptures':
-      '0':
-        'name': 'punctuation.definition.string.end.mirah'
-    'name': 'string.interpolated.mirah'
-    'patterns': [
-      {
-        'include': '#interpolated_mirah'
-      }
-      {
-        'include': '#escaped_char'
-      }
-    ]
-  }
+  # {
+  #   'begin': '`'
+  #   'beginCaptures':
+  #     '0':
+  #       'name': 'punctuation.definition.string.begin.mirah'
+  #   'comment': 'execute string (allows for interpolation)'
+  #   'end': '`'
+  #   'endCaptures':
+  #     '0':
+  #       'name': 'punctuation.definition.string.end.mirah'
+  #   'name': 'string.interpolated.mirah'
+  #   'patterns': [
+  #     {
+  #       'include': '#interpolated_mirah'
+  #     }
+  #     {
+  #       'include': '#escaped_char'
+  #     }
+  #   ]
+  # }
   {
     'begin': '%x\\{'
     'beginCaptures':
