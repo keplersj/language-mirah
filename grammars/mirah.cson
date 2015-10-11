@@ -111,12 +111,12 @@
     'name': 'keyword.other.special-method.mirah'
   }
   {
-    'begin': '\\b(?<!\\.|::)(require|require_relative|gem)\\b'
+    'begin': '\\b(?<!\\.|::)(import)\\b'
     'captures':
       '1':
         'name': 'keyword.other.special-method.mirah'
     'end': '$|(?=#|\\})'
-    'name': 'meta.require.mirah'
+    'name': 'meta.import.mirah'
     'patterns': [
       {
         'include': '$self'
